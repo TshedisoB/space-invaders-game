@@ -1,0 +1,289 @@
+
+#app-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: underline;
+  background: linear-gradient(to right, #ff0062, #ff8800, #becf23, #2bff00);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+ 
+
+/* buttons highlighter */
+.button-highlighter {  
+  display: block; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  padding: 20px;  
+}
+
+.sideButtonContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftButton {
+  padding: 16px 20px;
+  font-size: 24px;
+  border-radius: 4px;
+  border: none;
+  margin: 10px 10px 10px 0;
+}
+
+.rightButton {
+  padding: 16px 20px;
+  font-size: 24px;
+  border-radius: 4px;
+  border: none;
+  margin: 10px 0 10px 10px;
+}
+
+.upButton {
+  padding: 16px 20px;
+  font-size: 24px;
+  border-radius: 4px;
+  border: none;
+  margin: 0 10px; 
+}
+
+.highlighted {
+  border-radius: 50%; 
+  background: linear-gradient(to right, #be941d, #b8771e, #bc3406, #af0800);
+}
+
+/* player form */
+.player-name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 20rem;
+  height: 15rem;
+  top: 150px;
+  flex-direction: column;
+  background-color: #e2dde4;
+  margin: 0px 100px 0px 100px; 
+  padding: 0 0 20px;
+  border-radius: 10px;  
+  color: rgb(158, 81, 81)
+}
+
+.input-name {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+}
+
+#player-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  flex-direction: column;
+  background-color: white;
+}
+
+.name-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px
+}
+ 
+
+#player-title {
+  position: relative;
+  display: inline-block;
+  color: #ad0d7b
+}
+
+#player-title::after {
+  content: "";
+  border-right: 2px solid black;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+
+#game-instructions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ad0d7b
+}
+
+
+/* Game Board  */
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 300px;
+	height: 300px;
+  margin-bottom: 0.4rem;
+	border: solid black 1px; 
+  background: linear-gradient(to right, #f9e1ea, #e7b780, #afb955, #6fa963);
+}
+
+.grid div {
+	width: 20px;
+	height: 20px;
+}
+
+.bottom-blocks {
+  margin-bottom: 0.5rem;
+}
+
+.invader { 
+  background-size: cover;
+  background-image: url("../../public/images/invader.png");
+  border-radius: 10px;
+}
+
+.shooter { 
+  background-size: cover;
+  background-image: url("../../public/images/shooter.png");
+}
+
+.laser {
+  background-size: cover;
+  background-image: url("../../public/images/laser.png");
+}
+
+.boom {
+  box-shadow: 0 0 10px 10px rgb(255, 166, 0);
+  border-radius: 10px;
+}
+
+.canvas-container { 
+  display: flex;
+  position: relative;
+  left: -10rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.my-canvas {
+  background-color: #edb3b3;
+  border: 2px solid black;
+}
+
+img {
+	width: 20px;
+	height: 20px;
+}
+
+.sidebar {
+  position: relative;
+  left: 17rem;
+  background-color: #e2dde4;
+  border-radius: 10px;
+  margin: 2rem;
+  padding: 0.8rem;
+  border: 2px solid #ad0d7b;
+}
+
+.game-container {
+  display: flex;
+	position:relative;
+	left:17%;
+  top: -10%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#instructions, #rules {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ad0d7b;
+}
+
+.rules-instructions-container {
+  display: none; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e2dde4; 
+  position: relative;
+  left: 10%;
+  margin: 2rem;
+  padding: 0.8rem;
+  border: 2px solid #ad0d7b;
+  border-radius: 10px;
+  width: 20rem; 
+  margin-right: auto; 
+  overflow-y: auto;  
+}
+
+#instruction-list,#rules-list { 
+  color: #053692;
+  list-style-type: square;
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.results {  
+  font-size: 2.5rem;
+  margin: 2rem;
+  padding: 0.8rem; 
+  color: #ad0d7b;
+   
+}
+
+.game-over-overlay { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to right, #f9e1ea, #e7b780, #afb955, #6fa963);
+  margin: 2rem;
+  padding: 0.8rem;
+  border: 2px solid #ad0d7b;
+  border-radius: 10px;
+  width: 20rem;
+  height: 15rem;
+  top: 150px; 
+  z-index: 1;
+}
+
+#game-over {
+  font-size: 2rem;
+  color: #3f51b5;
+}
+
+#game-over-cell,#game-paused-cell {
+  color: #bd0909;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#name-cell {
+  color: #0e8003;
+  font-size: 1rem;
+  font-weight: bold;  
+  font-family: cursive;
+}
+
+#shot-cell, #alive-cell,#laser-cell {
+  font-weight: bold;
+  color: #053692;
+}
+
+#muteButton {
+  margin-left: 0.4rem;
+}

@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-image: url("../../public/images/spacebg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh; 
+}
+
+.app-link {
+  color: #0cdb02;
+}
