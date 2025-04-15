@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Celebrate } from "./Celebrate";
 import useSound from "use-sound";
-import Button from "@material-ui/core/Button";
+import Button from "@mui/material/Button";
 import { restartGame, gamePaused } from "../Redux/GameStats/actions";
 import lostSound from "../utils/sounds/lostSound.wav";
 import winSound from "../utils/sounds/winSound.wav";

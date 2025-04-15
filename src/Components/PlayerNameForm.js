@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { playerName } from "../Redux/PlayerName/actions";
-import { TextField, Button } from "@material-ui/core";
+import { TextField, Button } from "@mui/material";
 import { hidePlayerForm } from "../utils/helper";
 import Game from "./Game";
 import "../styles/main.css";
